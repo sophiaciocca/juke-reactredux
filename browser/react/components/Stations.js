@@ -18,18 +18,11 @@ const Stations = (props) => {
                    stations.map(station => {
                        return (
                             <div className="list-group-item" key={station}>
-                                <Link to={'#'}>{station}</Link>
+                                <Link to={`/stations/${station}`}>{station}</Link>
                             </div>
                         );
                    }) 
 
-                    // props.stations.map(station => {
-                    //     return (
-                    //         <div className="list-group-item" key={station.name}>
-                    //             <Link to={'#'}>{station.name}</Link>
-                    //         </div>
-                    //     );
-                    // })
                 }
             </div>
         </div>
